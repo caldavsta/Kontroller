@@ -1,12 +1,16 @@
 package application;
+	
+import java.io.IOException;
+import java.util.Timer;
+import java.util.TimerTask;
 
+import javafx.animation.Animation;
+import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Stage;
-
-import java.io.IOException;
 
 
 public class Kontroller extends Application {
@@ -33,8 +37,6 @@ public class Kontroller extends Application {
 		
 		appManager = new ApplicationManager(hwManager.getPk(), this);
 		hwManager.getPk().Initialize(appManager);
-
-
 
 	}
 	
